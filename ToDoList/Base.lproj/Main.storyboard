@@ -44,13 +44,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vpq-Km-JbY">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="gmp-4d-6iL">
+                            <connections>
+                                <action selector="editButtonPressed:" destination="BYZ-38-t0r" id="3AL-zs-io2"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hBi-WH-A3A">
                             <connections>
+                                <action selector="addBarButton:" destination="BYZ-38-t0r" id="bdX-9e-hbI"/>
                                 <segue destination="vUZ-aG-2hD" kind="presentation" identifier="AddDetail" id="WWN-YH-15d"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addBarButton" destination="hBi-WH-A3A" id="d42-HN-7Nq"/>
                         <outlet property="tableView" destination="jnm-kA-ZXc" id="0LE-aq-hhQ"/>
                     </connections>
                 </viewController>
