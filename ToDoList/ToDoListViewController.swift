@@ -10,6 +10,7 @@ import UIKit
 class ToDoListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
+    //array of starting list
     var toDoArray = ["Dummy","Foo","Bar","Temp"]
     
     override func viewDidLoad() {
